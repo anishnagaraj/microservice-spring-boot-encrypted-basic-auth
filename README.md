@@ -1,2 +1,1 @@
-# microservice-spring-boot-encrypted-basic-auth
-This poc explores the optio of using basic auth as a security mechanism for inter process comminications.
+This project demonstrates how basic auth mechanism could be used for microservices built using Spring Boot could synchronously communicate. To strengthen the mechanism, every password is encrypted and then hashed. So on every incoming request, the implementation matches the hash and then decrypt the password. The implementation is modular enough to choose any algorithms.
