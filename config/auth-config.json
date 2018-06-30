@@ -1,0 +1,34 @@
+{
+  "requireHttpAuth": true,
+  "hashAlgorithm": "SHA-1",
+  "hashIterations": 50000,
+  "users": [
+    {
+      "username": "myid",
+      "passwordHash": "jRpUWTvMFMeDV+q5q6EdFjcSTwg=",
+      "passwordSalt": "ThisIsAPoorSaltValue",
+      "authorisation": {
+        "required": true,
+        "identityHeader": "X-Authenticated-Principal"
+      },
+      "roles": [
+        "GET",
+        "POST",
+        "PUT",
+        "PATCH",
+        "DELETE"
+      ]
+    },
+    {
+      "username": "admin",
+      "passwordHash": "jRpUWTvMFMeDV+q5q6EdFjcSTwg=",
+      "passwordSalt": "ThisIsAPoorSaltValue",
+      "authorisation": {
+        "required": false
+      },
+      "roles": [
+        "GET"
+      ]
+    }
+  ]
+}
